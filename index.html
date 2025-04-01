@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            grid-template-rows: 60px auto;
+            height: 100vh;
+        }
+        .sidebar {
+            background-color: #1f2937;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            grid-row: span 2;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .header {
+            background-color: #111827;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .calendar-bar {
+            background-color: #374151;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            gap: 5px;
+        }
+        .calendar-bar span {
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #1f2937;
+        }
+
+        .content {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+      .card1{
+        background-color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            width: 200px;
+            height:100px;
+      } 
+      .card2{
+        background-color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            width: 200px;
+            height:100px;
+      }
+      .card3{
+        background-color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            width: 200px;
+            height:100px;
+      }
+      .card4{
+        background-color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            width: 200px;
+            height:100px;
+      }
+      .card5{
+        background-color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            width: 200px;
+            height:100px;
+      }
+      .card6{
+        background-color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            width: 200px;
+            height:100px;
+      }
+      .card7{
+        background-color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            width: 200px;
+            height:100px;
+      }
+      .card8{
+        background-color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            width: 200px;
+            height:100px;
+      }
+        .card {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 14px;
+            width: 200px;
+            height:100px;
+        }
+
+        .card9{
+        background-color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            width: 200px;
+            height:100px;
+      }
+        .card10{
+        background-color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            width: 200px;
+            height:100px;
+      }
+      .card11{
+        background-color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            width: 200px;
+            height:100px;
+      }
+      .card12{
+        background-color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            width: 200px;
+            height:100px;
+      }
+      .card13{
+        background-color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            width: 200px;
+            height:100px;
+      }
+
+      .card14{
+        background-color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            width: 200px;
+            height:100px;
+
+            @media (max-width: 1024px) { 
+    .content {
+        grid-template-columns: repeat(2, auto); 
+    }
+}
+
+@media (max-width: 768px) { 
+    .content {
+        grid-template-columns: repeat(1, auto); 
+    }
+}
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="#">📄 Введение</a>
+            <a href="#">🔔 Уведомления</a>
+            <a href="#">🌐 Веб-страница</a>
+            <a href="#">📘 Классный журнал</a>
+            <a href="#">📚 Обучение</a>
+            <a href="#">📄 Documentation</a>
+            <a href="#">📅 Повестка дня</a>
+            <a href="#">⚙️ Настройки</a>
+        </div>
+        <div class="header">
+            <span>Начало</span>
+            <div class="top-elements">
+                <span>Курс не выбран</span>
+                <span>Планы и заготовки</span>
+                <span>Стандарты</span>
+            </div>
+        </div>
+        <div class="calendar-bar">
+            <span>9:35 - 10:20</span>
+            <span>10:30 - 11:15</span>
+            <span>11:25 - 12:10</span>
+            <span>12:30 - 13:15</span>
+            <span>13:30 - 14:05</span>
+        </div>
+        <div class="content">
+            <div class="card">Сообщение</div>
+    <div class="card1">Классный журнал</div>
+    <div class="card2">Оценки</div>
+    <div class="card3">Работы / экзамены</div>
+    <div class="card4">Расписание</div>
+    <div class="card5">Certificates / printouts</div>
+    <div class="card6">Планы & Материалы</div>
+    <div class="card7">Результаты</div>
+    <div class="card8">Стандарты</div>
+    <div class="card9">Посещаемость (учащиеся)</div>
+    <div class="card10">Моя посещаемость</div>
+    <div class="card11">Замены</div>
+    <div class="card12">Регистрация / Опросы</div>
+    <div class="card13">Столовая</div>
+    <div class="card14">Заявления</div>
+        </div>
+    </div>
+</body>
+</html>
